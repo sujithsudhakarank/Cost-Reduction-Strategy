@@ -18,3 +18,13 @@ and update the API to fallback to Blob Storage when data is not found in Cosmos 
 cost-effective, and maintains all data access and uptime with no changes to existing API contracts.
 
 
+#CHALLENGES 
+
+*  Data in Blob Storage is slower to access than Cosmos DB
+*  Maintaining Data Consistency
+* Blob Storage is a separate service, so We need to secure access.
+* We have 2 million records. Storing them all flat in one container will get messy
+* How often should we move old data?
+* While this solution reduces cost and meets all technical requirements, we should also prepare for real-world challenges like ensuring data consistency during transfer, handling slower reads from Blob Storage, securing access, and maintaining the fallback logic. These can be managed with proper logging, retry mechanisms, and monitoring
+
+
