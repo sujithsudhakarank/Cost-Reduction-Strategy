@@ -1,8 +1,8 @@
 # *SCENARIO*
 
-*The Company is Storing all the Billing data in Cosmos DB
-*The app reads a lot of old billing records (called read-heavy).
-*Each record is large (>300 KB).
+-The Company is Storing all the Billing data in Cosmos DB
+-The app reads a lot of old billing records (called read-heavy).
+-Each record is large (>300 KB).
 *There are millions of records.
 *Most old records (older than 3 months) are rarely accessed.
 *if someone wants to see them later theyacess this data from DB
