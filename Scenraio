@@ -1,4 +1,3 @@
-
 The Company is Storing all the Billing data in Cosmos DB
 The app reads a lot of old billing records (called read-heavy).
 Each record is large (>300 KB).
